@@ -1,15 +1,17 @@
 <?php
 
-if($_POST["submit"]) {
-    $recipient="saumyavkg1500@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
+if(isset($_POST["submit"])) {
+    $name=$_POST['name];
     $senderEmail=$_POST["senderEmail"];
     $message=$_POST["message"];
+    
+    $mailTo="saumyavkg1500@gmail.com";
+    $headers ="From: ".$name;
+    $txt ="Received mail from ".$name.".\n\n".$message;
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    mail($mailTo, $txt, $headers);
+    
+    
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }

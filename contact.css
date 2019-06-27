@@ -1,0 +1,55 @@
+ /*..................contact....................*/
+ body{
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	font-family:vintage;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(contactpic.jpg);
+	background-size:center;
+	background-position:center;
+	font-family:sans-serif;
+	
+}
+
+.contact-title{
+	margin-top:100px;
+	color:white;
+	text-transform:uppercase;
+	transition:all 4s ease-in-out;
+}
+
+.contact-title h1{
+	font-size:32px;
+	line-height: 32px
+}
+
+form{
+	margin-top:50px;
+	/* transition:all 4s ease-in-out; */
+}
+
+.form-control{
+	width:200px;
+	background:none;
+	border:none;
+	outline:none;
+	/* border-bottom:1px solid gray; */
+	font-size:18px;
+	margin-bottom:16px;
+}
+
+form .submit{
+	background:#ff5722;
+	border-color:transparent;
+	color:black;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:2px;
+	height:50px;
+	margin-top:20px;
+}
+
+form.submit:hover{
+	background-color:#f44336;
+	cursor:pointer;
+}
